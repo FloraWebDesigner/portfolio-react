@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Paytone+One&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --theme-font: #073b4c; 
+  /* --theme-font */
+  --theme-font-second:#6c757d;
+  /* --theme-font-second */
+  --theme-icon:#580aff; 
+  /* --theme-icon */
+  --theme-font-opposite:#f8f9fa;
+  /* --theme-font-opposite */
+  --theme-main:#fee440;  
+  /* --theme-main */
+}
+
+/* const themes = ["yellow", "blue", "red", "dark"]; */
+
+#root {
+  max-width: 1366px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.card-title,
+.link{
+  color:var(--theme-font);
+  /* transition: color 0.3s ease-in-out; */
+}
+
+.project-detail .link:hover{
+  color:var(--theme-icon) !important;
+}
+
+.grid-item:hover{
+  background-color:var(--theme-font);
+  color: var(--theme-font-opposite);
+}
+
+.grid-item:hover .link,
+.grid-item:hover .card-title{
+  color:  var(--theme-font-opposite) !important;
+}
+
+.grid-item:hover .link:hover {
+  color: var(--theme-main) !important; 
+}
+
+
+/* body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #78b6cd, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	height: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ */
+
+
+
+ 

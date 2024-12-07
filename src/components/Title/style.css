@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Paytone+One&family=Ubuntu:wght@400;500;700&display=swap");
+
+.mytitle {
+  font-family: "Monoton", sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+  color: var(--theme-font);
+  opacity: 0;
+  transform: translateY(-1rem);
+  animation: bounce-title 1.5s ease-out 5s forwards;
+}
+
+.title-container i {
+  color: var(--theme-icon);
+  transform: translateY(-1rem);
+}
+
+.title-container .description {
+  transform: translateY(-1.2rem);
+}
+
+.description {
+  color: var(--theme-font-second);
+  opacity: 0;
+  animation: bounce-desc 1s ease-out 6s forwards;
+}
+
+.title-i {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: flyIn-left 1s ease-out 6.5s forwards;
+  transform: translateY(-1.2rem);
+}
+
+@keyframes bounce-desc {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1.2rem);
+  }
+}
+
+@keyframes bounce-title {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes flyIn-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(-1.2rem);
+  }
+}
+
+@keyframes flyIn-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,14 @@
+
+/* .card {
+    flex: 1 1 20rem; 
+    max-width: 50rem; 
+    height: auto;
+  }  */
+  
+  .project-detail-img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border:1rem solid var(--theme-font);
+    border-radius: 1rem;  
+  }

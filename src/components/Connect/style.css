@@ -1,0 +1,62 @@
+#connect {
+  background-color: var(--theme-font);
+  color: var(--theme-font-opposite);
+}
+
+.connect-title {
+  font-family: "Monoton", sans-serif;
+  text-align: center;
+  font-size:3rem;
+  margin-top: 2rem;
+  color: var(--theme-font-opposite);
+}
+
+#connect h5 {
+  color: var(--theme-main);
+}
+
+
+#connect i {
+  font-size: 2.5rem;
+}
+
+.btn-msg {
+  color: var(--theme-font-opposite);
+  background-color: transparent;
+  border: solid 1px var(--theme-font-opposite);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-msg:hover {
+  color: var(--theme-font);
+  background-color: var(--theme-font-opposite);
+  border: solid 1px var(--theme-font-opposite);
+}
+
+.nav-bottom a{
+  text-decoration: none;
+}
+
+.nav-bottom-link{
+  color: var(--theme-font-opposite) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bottom .active,
+.nav-bottom-link:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--theme-font-opposite);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.connect{
+  text-decoration: none;
+  color: var(--theme-font-opposite);
+  transition: all 0.3s ease-in-out;
+}
+
+.connect:hover{
+  color: var(--theme-main);
+}
+

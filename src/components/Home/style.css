@@ -1,0 +1,129 @@
+.container{
+    background: transparent;
+}
+
+#home h1,
+#home p{
+color:var(--theme-font);
+}
+
+.btn-connect{
+    background-color: var(--theme-font) !important;
+    cursor: pointer;
+    color: var(--theme-font-opposite);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-connect:hover{
+    background-color:var(--theme-icon) !important;
+    transform: scale(1.05);
+    cursor: pointer;
+    color: var(--theme-font-opposite);
+}
+
+
+.btn-connect {
+    opacity: 0; 
+    transform: scale(1); 
+    animation: showAndScale 0.5s ease-in-out 4s forwards; 
+  }
+  
+
+  @keyframes showAndScale {
+    0% {
+      opacity: 0; 
+      transform: scale(1); 
+    }
+    25% {
+      opacity: 1; 
+      transform: scale(1.1); 
+    }
+    50% {
+        opacity: 1; 
+        transform: scale(1); 
+      }
+      75%{
+        opacity: 1; 
+      transform: scale(1.1); 
+      }
+    100% {
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+
+
+
+.me{
+    background-color: var(--theme-font);
+}
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden; 
+    width: fit-content; 
+    animation: typing 4s steps(30, end), cursor 0.6s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+  }
+
+  @keyframes cursor {
+    from {
+        border-right-color: transparent; 
+    }
+    to {
+        border-right-color: black; 
+    }
+}
+
+.typing::after {
+    content: ""; 
+    width: 2px;
+    height: 1em;
+    margin-left: 4px;
+    background-color: black;
+    animation: cursor 0.6s step-end infinite;
+}
+
+
+
+  .floating {
+    opacity: 0; 
+    transform: translateY(100%); 
+    animation: floatIn 2s ease-in-out 2s forwards; 
+  }
+
+  .floating-img {
+    opacity: 0; 
+    transform: translateX(100%); 
+    animation: floatIn20 1s ease-in-out 3.5s forwards; 
+  }
+  
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes floatIn20 {
+    0% {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }

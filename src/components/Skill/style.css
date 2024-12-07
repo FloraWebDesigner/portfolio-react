@@ -1,0 +1,48 @@
+.skill-shadow {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+  }
+
+
+.small-70 {
+    transform: scale(0.70);  
+}
+
+.small-80 {
+    transform: scale(0.8);  
+}
+
+.small-55 {
+    transform: scale(0.55);  
+}
+
+.small-40 {
+    transform: scale(0.4);  
+}
+
+
+.skill-container {
+    display: flex;
+    overflow: hidden; 
+    width: 100%; 
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.scroll-animation {
+    display: flex;
+    animation: scroll-left 30s linear infinite; 
+}
+
+.scroll-animation img {
+    margin: 0 1rem; 
+    max-height: 3rem; 
+    width: auto; 
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
