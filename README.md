@@ -1,8 +1,21 @@
-# React + Vite
+# Flora's portfolio
+## React
+Deployed link: https://flora-portfolio-1bd9a1t7m-floras-projects-0cf04884.vercel.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Welcome to my portfolio! Here's what you'll find:
 
-Currently, two official plugins are available:
+Home: Introduction to my background and work.
+Projects: View my projects in different view modes.
+Skills: Smooth scrolling presentation of my skills.
+Connect: Get in touch with me through the contact page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Highlights:
+Dynamic color-changing background.
+Engaging project view modes.
+A diverse range of projects utilizing various programming languages and technologies.
+Infinite scrolling skill presentation.
+
+## API:
+Json: https://portfolio-node-js-1.onrender.com/api/project/list
+Admin: https://portfolio-node-js-1.onrender.com/
+Github: https://github.com/FloraWebDesigner/portfolio-Node.js
