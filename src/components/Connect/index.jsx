@@ -1,7 +1,36 @@
 import "./style.css";
 import React from "react";
+import Swal from "sweetalert2";
 
 export default function Connect() {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const form = event.target; 
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", import.meta.env.VITE_WEB3_FORM_KEY);
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success",
+              });
+              form.reset();
+        }
+      };
   return (
     <section
       className="container-fluid p-5 rounded-top-5"
@@ -12,7 +41,7 @@ export default function Connect() {
       <div className="container row">
         <div className="col-sm-4">
           <h5 className="fw-bolder">Message</h5>
-          <form>
+          <form onSubmit={onSubmit}>
             <fieldset>
               <div className="mb-2 row">
                 <div className="col-4 col-sm-3 text-start">
@@ -34,7 +63,7 @@ export default function Connect() {
                   <label htmlFor="msg">Message</label>
                 </div>
                 <div className="col-8 col-sm-9">
-                  <textarea name="msg" id="msg" className="w-100"></textarea>
+                  <textarea name="msg" id="msg" className="w-100 p-2"></textarea>
                 </div>
               </div>
               <button type="submit" className="btn btn-sm w-100 btn-msg mb-4">
