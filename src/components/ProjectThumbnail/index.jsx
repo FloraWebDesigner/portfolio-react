@@ -8,7 +8,7 @@ export default function ProjectThumbnail({ proj }) {
       <img
         src={
           proj.Img
-            ? `https://portfolio-node-js-1.onrender.com/img/${proj.Img}`
+            ? `https://portfolio-backend-vercel-three.vercel.app/img/${proj.Img}`
             : "./projects/placeholder.png"
         }
         alt={proj.ProjectName}
