@@ -8,13 +8,18 @@ export default function ProjectThumbnail({ proj }) {
       <img
         src={
           proj.Img
-            ? `https://portfolio-backend-vercel-three.vercel.app/img/${proj.Img}`
+            ? `https://portfolio-backend-zeta-eight.vercel.app/img/${encodeURIComponent(proj.Img)}`
             : "./projects/placeholder.png"
         }
         alt={proj.ProjectName}
         className="project-img"
         data-tooltip-id="tooltip"
         data-tooltip-content={proj.Desc}
+        onError={(e) => {
+    e.currentTarget.src = placeholder;
+    e.currentTarget.onerror = null; 
+  }}
+  crossOrigin="anonymous"
       />
       <ReactTooltip id="tooltip" place="top" effect="solid" />
       <div className="card-body d-flex flex-column justify-content-between p-1">

@@ -12,8 +12,8 @@ export default function ProjectList() {
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await fetch(
-        // "http://localhost:2024/api/project/list"
-        "https://portfolio-backend-vercel-three.vercel.app/api/project/list"
+        "https://portfolio-backend-zeta-eight.vercel.app/api/project/list"
+        // "https://portfolio-backend-vercel-three.vercel.app/api/project/list"
       );
       const data = await response.json();
       setProjList(data);

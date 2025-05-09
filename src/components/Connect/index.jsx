@@ -7,8 +7,11 @@ export default function Connect() {
         event.preventDefault();
         const form = event.target; 
         const formData = new FormData(event.target);
+        const accessKey = import.meta.env.PROD 
+  ? process.env.WEB3_FORM_KEY         
+  : import.meta.env.VITE_WEB3_FORM_KEY;
     
-        formData.append("access_key", import.meta.env.VITE_WEB3_FORM_KEY);
+        formData.append("access_key", accessKey);
     
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
